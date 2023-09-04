@@ -1,0 +1,95 @@
+body {
+  margin-left: 20px;
+}
+
+.PageTitle {
+  text-align: center;
+  font-size: 1.5cm;
+}
+
+label {
+  font-size: x-large;
+}
+
+.Body {
+  margin-top: 50px;
+}
+
+#result {
+  display: none;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+img {
+  position: absolute;
+  height: 500px;
+  left: 800px;
+}
+
+#convert {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+select {
+  width: 210px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+#fromUnit {
+  margin-left: 15px;
+}
+
+#temperature {
+  margin-left: 14px;
+}
+
+button {
+  margin-left: 65px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  width: 250px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #007bff;
+}
