@@ -32,7 +32,7 @@ img {
 }
 
 input {
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 30px;
   font-size: 16px;
@@ -46,7 +46,7 @@ input:focus {
 
 select {
   width: 210px;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 30px;
   font-size: 16px;
@@ -65,11 +65,15 @@ select::-ms-expand {
 }
 
 #fromUnit {
-  margin-left: 15px;
+  margin-left: 35px;
 }
 
 #temperature {
-  margin-left: 14px;
+  margin-left: 34px;
+}
+
+#toUnit{
+  margin-left: 20px;
 }
 
 button {
