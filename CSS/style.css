@@ -1,91 +1,53 @@
 body {
-  margin-left: 20px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .PageTitle {
   text-align: center;
-  font-size: 1.5cm;
+  font-size: 2rem;
 }
 
 label {
-  font-size: x-large;
+  font-size: 1.25rem; 
 }
 
 .Body {
-  margin-top: 50px;
+  margin-top: 3rem;
 }
 
 #result {
   display: none;
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 1rem;
+  font-size: 1.125rem;
 }
 
 img {
-  position: absolute;
-  height: 500px;
-  left: 800px;
+  max-width: 70%; 
+  height: auto;
+  position: relative;
+  left: 16%;
 }
 
-#convert {
-  margin-bottom: 20px;
-}
-
-input {
-  padding: 5px;
-  border: 1px solid #ccc;
+input, select, button {
+  width: 100%; 
+  padding: 0.3125rem;
+  margin-top: 0.5rem; 
+  font-size: 1rem;
   border-radius: 30px;
-  font-size: 16px;
+  border: 1px solid #ccc;
 }
 
-input:focus {
+input:focus, select:focus, button:focus {
   outline: none;
   border-color: #007bff;
   box-shadow: 0 0 5px #007bff;
-}
-
-select {
-  width: 210px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  font-size: 16px;
-  background-color: #fff;
-  color: #333;
-}
-
-select:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px #007bff;
-}
-
-select::-ms-expand {
-  display: none;
-}
-
-#fromUnit {
-  margin-left: 35px;
-}
-
-#temperature {
-  margin-left: 34px;
-}
-
-#toUnit{
-  margin-left: 20px;
 }
 
 button {
-  margin-left: 65px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 30px;
-  font-size: 16px;
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
-  width: 250px;
   font-weight: bold;
 }
 
@@ -93,7 +55,25 @@ button:hover {
   background-color: #0056b3;
 }
 
-button:focus {
-  outline: none;
-  box-shadow: 0 0 5px #007bff;
+@media (min-width: 768px) {
+  .Body, input, select, button {
+    width: auto; 
+    max-width: 500px;
+  }
+
+  img {
+    position: absolute;
+    left: 80%; 
+    transform: translateX(-50%); 
+    height: 300px; 
+    top: 20%;
+  }
+
+  #fromUnit, #temperature, #toUnit, button {
+    margin-left: 5px; 
+  }
+
+  button {
+    width: 250px; 
+  }
 }
