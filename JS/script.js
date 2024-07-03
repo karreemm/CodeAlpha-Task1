@@ -7,7 +7,7 @@ document.getElementById("convert").addEventListener("click", function () {
   if (!isValidNumber(temperatureInput)) {
     document.getElementById("result").textContent =
       "Please enter a valid number";
-    document.getElementById("result").style.color = "red";
+    document.getElementById("result").style.color = "#fff";
     document.getElementById("result").style.display = "block";
     document.getElementById("result").style.fontSize = "24px";
     return;
@@ -18,7 +18,7 @@ document.getElementById("convert").addEventListener("click", function () {
   if (fromUnit === toUnit) {
     document.getElementById("result").innerHTML =
       "No conversion needed.<br>Temperature remains the same.";
-    document.getElementById("result").style.color = "darkgreen";
+    document.getElementById("result").style.color = "#fff";
     document.getElementById("result").style.display = "block";
     document.getElementById("result").style.fontSize = "24px";
   } else {
@@ -40,7 +40,7 @@ document.getElementById("convert").addEventListener("click", function () {
     resultDiv.textContent = `Converted Temperature is: ${convertedTemperature.toFixed(
       2
     )} ${toUnit}`;
-    resultDiv.style.color = "darkgreen";
+    resultDiv.style.color = "#fff";
     resultDiv.style.display = "block";
     resultDiv.style.fontSize = "24px";
   }
@@ -49,3 +49,22 @@ document.getElementById("convert").addEventListener("click", function () {
 function isValidNumber(value) {
   return /^-?\d+(\.\d+)?$/.test(value);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  function setOptionBackgrounds(selectElement) {
+    const options = selectElement.options;
+    for (let i = 0; i < options.length; i++) {
+      options[i].style.backgroundColor = '#16222A';
+      options[i].style.color = 'white';
+    }
+  }
+
+  const selectElements = document.querySelectorAll('select');
+  selectElements.forEach(selectElement => {
+    setOptionBackgrounds(selectElement);      
+    selectElement.addEventListener('change', function() {
+      setOptionBackgrounds(selectElement);
+    });
+  });
+});
+
