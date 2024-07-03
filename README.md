@@ -12,9 +12,7 @@ This project is designed to help users quickly and easily perform temperature co
 3. Select the desired output unit.
 4. Click "Convert" to see the result.
 
-## Demo
 
-Check out the live demo [here](https://drive.google.com/file/d/1St5eq-D6Ty84bvHFXP4wnnVTZ9Zd0TdR/view?usp=drive_link).
 
 
 
