@@ -1,19 +1,27 @@
 body {
   margin: 0 auto;
   padding: 20px;
+  background: linear-gradient(to right, #02AABD  , #00CDAC); 
 }
 
 .PageTitle {
   text-align: center;
   font-size: 2rem;
+ color:#16222A ;
 }
 
+
 label {
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
 }
 
 .Body {
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 #result {
@@ -22,58 +30,137 @@ label {
   font-size: 1.125rem;
 }
 
-img {
-  max-width: 70%; 
-  height: auto;
-  position: relative;
-  left: 16%;
+.from, .to{
+  width: 80%;
 }
 
-input, select, button {
-  width: 100%; 
-  padding: 0.3125rem;
-  margin-top: 0.5rem; 
+.from{
+  display: flex;
+  justify-content: around;
+  align-items: center;
+  gap: 1rem;
+}
+.to{
+  display: flex;
+  justify-content: around;
+  align-items: center;
+  gap: 2rem;
+}
+input,
+select
+ {
+  width: 80%;
+  padding: 5px;
+  margin-top: 0.5rem;
   font-size: 1rem;
-  border-radius: 30px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; 
+  border: none;
+  background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+  color: white;
+  
+}
+button{
+  width: 80%;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-sizing: border-box; 
+  border: none;
 }
 
-input:focus, select:focus, button:focus {
+.result-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+input:focus,
+select:focus,
+button:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px #007bff;
+  background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+  box-shadow: 0 0 20px #fff;
+}
+
+input::placeholder {
+  padding: 5px; 
+  color: white;
 }
 
 button {
-  background-color: #007bff;
+  background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
   color: #fff;
   cursor: pointer;
   font-weight: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
 }
 
+
 @media (min-width: 768px) {
-  .Body, input, select, button {
-    width: auto; 
-    max-width: 500px;
+  .PageTitle {
+    text-align: center;
+    font-size: 3rem;
+  }
+  label {
+    font-size: 1.6rem;
   }
 
-  img {
-    position: absolute;
-    left: 80%; 
-    transform: translateX(-50%); 
-    height: 300px; 
-    top: 20%;
+  select {
+    width: 15rem;
   }
 
-  #fromUnit, #temperature, #toUnit, button {
-    margin-left: 5px; 
+  button{
+    width: 18rem;
+    height: 2rem;
+  }
+  input {
+    width: 15rem;
+    font-size: 1rem;
+    padding: 5px;
+    box-sizing: border-box;
   }
 
-  button {
-    width: 250px; 
+  input::placeholder {
+    font-size: 1rem;
+    padding: 5px; 
+  }
+
+  .Body {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .result-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .from, .to{
+    width: auto;
+  }
+  .from{
+    display: inline-block;
+  }
+  .to{
+    display: inline-block;
   }
 }
