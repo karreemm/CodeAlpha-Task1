@@ -9,36 +9,26 @@
   </head>
   <body>
     <h1 class="PageTitle">Temperature Converter</h1>
-
-    <img src="Images/tempIcon5.png" alt="" />
-
-    <h1>Convert temperature between different units seamlessly!</h1>
-
     <div class="Body">
-      <label for="temperature">Enter Temperature:</label>
       <input type="text" id="temperature" placeholder="Enter temperature" />
-      <br />
-      <br />
-
-      <label for="temperature">Choose Input Unit:</label>
-      <select id="fromUnit">
-        <option value="celsius">Celsius (°C)</option>
-        <option value="fahrenheit">Fahrenheit (°F)</option>
-        <option value="kelvin">Kelvin (K)</option>
-      </select>
-      <br />
-      <br />
-
-      <label for="temperature">Choose Output Unit:</label>
-      <select id="toUnit">
-        <option value="celsius">Celsius (°C)</option>
-        <option value="fahrenheit">Fahrenheit (°F)</option>
-        <option value="kelvin">Kelvin (K)</option>
-      </select>
-
-      <br />
-      <br />
-
+      <div class="from">
+        <label for="temperature">From:</label>
+        <select id="fromUnit">
+          <option value="celsius">Celsius (°C)</option>
+          <option value="fahrenheit">Fahrenheit (°F)</option>
+          <option value="kelvin">Kelvin (K)</option>
+        </select>
+      </div>
+      <div class="to">
+        <label for="temperature">To:</label>
+        <select id="toUnit">
+          <option value="celsius">Celsius (°C)</option>
+          <option value="fahrenheit">Fahrenheit (°F)</option>
+          <option value="kelvin">Kelvin (K)</option>
+        </select>
+      </div>
+    </div>
+    <div class="result-container">
       <button id="convert">Convert</button>
       <div id="result"></div>
     </div>
