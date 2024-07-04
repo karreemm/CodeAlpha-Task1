@@ -12,7 +12,7 @@ body {
 
 
 label {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .Body {
@@ -28,6 +28,7 @@ label {
   display: none;
   margin-top: 1rem;
   font-size: 1.125rem;
+  text-align: center;
 }
 
 .from, .to{
@@ -51,6 +52,7 @@ select
  {
   width: 80%;
   padding: 5px;
+  height: 2.4rem;
   margin-top: 0.5rem;
   font-size: 1rem;
   border-radius: 8px;
@@ -89,6 +91,10 @@ button:focus {
 input::placeholder {
   padding: 5px; 
   color: white;
+}
+
+#temperature{
+  padding-left: 10px;
 }
 
 button {
@@ -131,6 +137,10 @@ button:hover {
     font-size: 1rem;
     padding: 5px;
     box-sizing: border-box;
+  }
+
+  #temperature{
+    padding-left: 10px;
   }
 
   input::placeholder {
